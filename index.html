@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIP</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link href="./styles.css" rel="stylesheet">
+  </head>
+
+  <body class="container text-center">
+    <header class="masthead p-2 m-2">
+      <div class="inner ">
+        <!-- <h3 class="justify-content-md-center">Cover</h3> -->
+      </div>
+    </header>
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+    </div>
+
+    
+
+    <main role="main" class="inner cover table-responsive">
+      <h1 class="justify-content-md-center p-2 m-2 border border-primary rounded-lg bg-dark">High Scores</h1>
+      <table id="scores" class="table table-dark table-hover">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Username</th>
+            <th scope="col">Score</th>
+            <th scope="col">Time</th>
+            <th scope="col">Deaths</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Interloper</td>
+            <td>234</td>
+            <td>5:00</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Vanguard</td>
+            <td>220</td>
+            <td>5:30</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Cavaclade</td>
+            <td>210</td>
+            <td>5:40</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <th scope='row' id='index'>#</th>
+            <td><input type="text" name="index" id="userName"></td>
+            <td><input type="text" name="index" id="userScore"></td>
+            <td><input type="text" name="index" id="userTime"></td>
+            <td><input type="text" name="index" id="userDeaths"></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="mastfoot mt-auto">
+        <button type="button" onclick="addRow()" class="btn btn-primary col-md-2">Submit</button>
+      </div>
+
+      
+    </main>
+
+    <footer class="mastfoot mt-auto m-2 p-2">
+      <div class="inner p-2 m-2">
+        <p><img class="dewit" src="./img/DEWIT_emote.png" alt="DEW IT"></p>
+      </div>
+    </footer>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
